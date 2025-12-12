@@ -1,0 +1,24 @@
+{
+  "name": "pbs-player-react",
+  "version": "1.0.0",
+  "description": "React hook to initialize the PBS Partner Player using a bundled player.js (does not render UI).",
+  "type": "commonjs",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.js --format cjs,esm --dts --out-dir dist && node ./scripts/copy-player-to-dist.js",
+    "prepare": "npm run build",
+    "clean": "rm -rf dist",
+    "test": "echo \"no tests\""
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
