@@ -1,6 +1,6 @@
 {
   "name": "pbs-player-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React hook to initialize the PBS Partner Player using a bundled player.js (does not render UI).",
   "type": "commonjs",
   "main": "dist/index.js",
